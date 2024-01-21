@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url(/assets/images/Path\ 15.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    width: 100vw;
+    height: 80vh;
+}
+
+
+h1{
+    color: #D3E10E;
+    font: normal normal bold 86px/113px Assistant;
+    padding: 20px;
+    margin-top: 7rem;
+}
+
+p{
+    color: #F9F9F9;
+    font: normal normal normal 20px/26px Assistant;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container .head{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container form{
+    direction: rtl;
+    display: flex;
+
+}
+
+.form-main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    margin-left: 2rem;
+    margin-top: 15em;
+}
+
+.container form input {
+    background: #F6F6F6 0% 0% no-repeat padding-box;
+    border: 0;
+    border-bottom: 4px solid #D3E10E;
+    width: 20vw;
+    height: 5vh;
+}
+
+
+#btn{
+    background-color: #D3E10E;
+    color: #011560;
+    width: 200px;
+    font: normal normal bold 22px/30px Assistant;
+    margin: 1.5rem 5rem;
+
+
+}
+
+.form-control{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    color: #011560;
+    font: normal normal bold 16px/21px Assistant;
+    margin: 0 1rem;
+}
+
+
+@media screen and (max-width:900px){
+    
+    .header > h1{
+        font: normal normal bold 45px/55px Assistant;
+    }
+    .header > p{
+        font: normal normal normal 16px/28px Assistant;
+    }
+    .header{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 100vw;
+    }
+    .header > p{
+        width: 80%;
+        margin-left: 1.5rem;
+
+    }
+    body{
+        background-size: 100% 70%;
+    }
+
+    .container form{
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 90vw;
+    margin-right: 2em;
+    }
+
+    .form-main{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-control{
+        display: flex;
+
+    }
+
+    .container form input {
+        width: 80vw;
+        height: 5vh;
+        background-color: #E5EEFF;
+        margin:1em 0 
+    }
+
+    #btn{
+        width: 80vw;
+    }
+}

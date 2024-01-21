@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project1</title>
-
-    <link rel="stylesheet" href="./styles/project1.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/project3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200..800&display=swap" rel="stylesheet">
 </head>
-
 <body>
-    <div id="container">
-
-        <div id="container-img">
-            <img src="./assets/images/Coffee.png" alt="">
+    <div class="container">
+        <div class="header">
+            <h1>תן לנו להוביל אותך קדימה</h1>
+            <p>
+                לורם איפסום או בקיצור ליפסום, הוא מלל מקובל וחסר משמעות המשמש “ממלא מקום” בעת עריכ.
+            </p>
         </div>
-
-        <div id="container-content">
-            <form id="form">
-
-                <h1>קפה טוב לבוקר טוב</h1>
-                <p>לקבלת קופון לקפה חינם ומפנק שיפתח לכם את היום בחיוך, יש למלא את הפרטים:</p>
-
-                <div class="form-control">
-                    <label for="name">שם מלא</label>
-                    <input id="name" type="text" required>
-                </div>
-                <div class="form-control">
-                    <label for="email">דוא״ל</label>
-                    <input id="email" type="email" required>
-                </div>
-                <div class="form-control">
-                    <input type="submit" value="שליחה">
-                </div>
-            </form>
-        </div>
-
+        <div class="form-main">
+        <form action="main">
+            <div class="name form-control">
+                <label for="name">שם מלא</label>
+                <input type="text" required>
+            </div>
+            <div class="email form-control">
+                <label for="email">דוא"ל</label>
+                <input type="email">
+            </div>
+            <div>
+            <input id="btn" type="submit" value="שליחה" required>
+            </div>
+            </div>
+        </form>
     </div>
 </body>
-
 </html>

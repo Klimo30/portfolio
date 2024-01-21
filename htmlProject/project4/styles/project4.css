@@ -1,0 +1,293 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 100%;
+    height: 100vh;
+}
+
+#form-content{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    margin-top: 2.5rem;
+    justify-content: center;
+    flex-direction: column;
+    direction: rtl;
+    padding: 7rem;
+}
+
+#icon{
+    background-color:#FDBD03 ;
+    margin-left: 5.5rem;
+    margin-top: 2rem;
+    height: 3rem;
+    width: 5rem;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icons{
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    gap: 2.5em;
+    margin-top: 250px;
+    margin-right: 150px;
+    width: 100%;
+}
+
+
+.icons > i {
+    background-color:#FDBD03;
+    height: 60px;
+    width: 60px;
+    border-radius: 100%;
+    line-height: 2.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap
+}
+
+#phone-image > img{
+    width: 500px;
+    height: 700px;
+    margin-top: 7rem;
+}
+
+#title-para{
+    direction: rtl;
+    margin-bottom: 5rem;
+}
+
+#title-para > h1{
+    direction: rtl;
+    color: #FDBD03;
+    font: normal normal 900 66px/97px Heebo;
+}
+
+#title-para > p {
+    margin-top: 1.5rem;
+    width: 60%;
+    color: #020253;
+    font: normal normal normal 20px/29px Heebo;
+}
+
+
+.form{
+direction: rtl;
+display: flex;
+flex-direction: column;
+gap: 0.5rem;
+width: 80%;
+height: 10vh;
+color: #2C2C2C;
+}
+
+
+#labels{
+    display: flex;
+    flex-direction: row;
+    direction: rtl;
+    text-align: right;
+    font: normal normal bold 16px/24px Heebo;
+}
+
+.name_email{
+     display: flex;
+}
+
+
+.full_name{
+    display: flex;
+    flex-direction: column;
+}
+#full_name , .full_name{
+    height: 120px;
+    width: 45rem;
+    border-bottom: #FDBD03 2px solid;
+    font: normal normal bold 16px/24px Heebo;
+}
+
+input{
+    background-color: #E5EEFF;
+    border: none;
+}
+
+.inputs{
+    height: 40px;
+    width: 22rem;
+    display: flex;
+    border-bottom: #FDBD03 4px solid;
+
+}
+
+.name, .email {
+    display: block;
+    margin: 0px 0 0px 1rem;
+    color: #2C2C2C;
+}
+
+input[type=submit]{
+    height: 50px;
+    margin-top: 2.5rem;
+    background-color: #FDBD03;
+    width: 150px;
+    font: normal normal bold 22px/30px Heebo;
+
+}
+
+#border_top{
+    width: 500px;
+    background-color: #FDBD03;
+    height: 18px;
+    float: right;
+}
+
+
+#border_bottom{
+    width: 1080px;
+    background-color: #FDBD03;
+    height: 18px;
+    float: left;
+}
+
+@media only screen and (max-width: 600px){
+    .container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 95%;
+        height: 100vh;
+        padding: 15px;
+    }
+    #phone-image > img{
+        width: 200px;
+        height: 250px;
+        padding: 20px;
+        margin-bottom: 14rem;
+        display: flex;
+    }
+    #form-content{
+        height: 40vh;
+        flex-wrap: nowrap;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    #title-para{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        align-items: center;
+    }
+    #title-para > h1{
+        font: normal normal 900 40px/59px Heebo;
+        width: 60vw;
+        text-align: center;
+    }
+    #title-para > p{
+        width: 60vw;
+        font: normal normal normal 15px/22px Heebo;
+        color: #020253;
+        text-align: center;
+    }
+    .form{
+        display: flex;
+        height: 40vh;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .name, .email{
+        display: flex;
+        flex-direction: column;
+    }
+    #labels{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+    .full_name{
+        direction: rtl;
+        display: flex;
+    }
+    #full_name , .full_name{
+        display: flex;
+        height: 120px;
+        width: 95vw;
+        border:none;
+    }
+    #full_name{
+        display: flex;
+        width: 95%;
+        justify-content: center;
+        align-items: center;
+        border-bottom: #FDBD03 3px solid;
+    }
+
+    .inputs{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90vw;
+        border-bottom: #FDBD03 3px solid;
+    }
+    input[type=submit]{
+        height: 50px;
+        background-color: #FDBD03;
+        width: 400px;
+        font: normal normal bold 22px/30px Heebo;
+        margin-left: 1.5rem;
+
+    }
+    #icon{
+        display: none;
+    }
+
+    .icons{
+        width: 80vw;
+        height: 10px;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        margin-left: 10rem;
+    }
+
+    .icons > i {
+        background-color:#FDBD03;
+        height: 55px;
+        width: 100px;
+        border-radius: 100%;
+        line-height: 2.5em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #border_top{
+        float: right;
+        width: 85%;
+        position: relative;
+    }
+
+    #border_bottom{
+        width: 100%;
+        position: absolute;
+        top: 1250px;
+    }
+
+
+}
