@@ -1,10 +1,273 @@
 * {
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
-header {
+/* Primary Colors #129dde  #ff8200 */
+
+
+
+body{
+    width: 100%;
+    height: 100vh;
+    font-family: "Heebo", sans-serif;
+}
+
+/* DESKTOP STYLING  */
+/* HEADER SECTION */
+.header{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    height:4rem;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+
+
+.header, .nav {
+    display: flex;
+}
+
+.nav-links, li, a{
+    display:flex;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+}
+
+a{
+    color: #393E46;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+/* HERO SECTION */
+
+.hero {
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    height: 70vh;
+    width: 100%;
+}
+
+.image_pic > img:nth-child(1) {
+    width: 25rem;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+}
+
+.image_pic > img:nth-child(2) {
+    width: 30rem;
+    z-index: 1;
+    position: absolute;
+}
+
+.image_pic{
+    position: relative;
+    display: flex;
+    width: 30%;
+}
+
+.info{
+    display: flex;
+    flex-direction: column;
+    padding: 8rem;
+    margin-top: 14rem;
+    width: 50%;
+    
+    
+}
+
+.info h3 {
+    color: #222831;
+}
+
+.info h1{
+    font-size: 3.5em;
+    color: #222831;
+}
+
+#name{
+    color: #129dde;
+    font-weight: bolder;
+}
+
+#firstletter{
+    color: #129dde;
+}
+
+.info a {
+    background-color: #ff8200;
+    margin:4rem;
+    padding: 10px;
+    width: 9.2rem;
+    color: #ffffff;
+    border-radius: 12px;
+    text-align: center;
+}
+
+/* ICONS */
+
+.logos{
+    overflow: hidden;
+    padding: 6rem 0;
+    background-color: rgb(255, 255, 255);
+    white-space: nowrap;
+    position: relative;
+}
+
+.logos:before,
+.logos:after{
+    position: absolute;
+    top: 0;
+    width: 200px;
+    height: 100%;
+    content: "";
+    z-index: 1;
+}
+
+.logos:before{
+    left: 0;
+    background:linear-gradient(to left, rgba(255, 255 ,255, 0),white);
+}
+
+.logos:after{
+    right: 0;
+    background:linear-gradient(to right, rgba(255, 255 ,255, 0),white);
+}
+
+.logos:hover .logos-slide {
+    animation-play-state: paused;
+}
+
+
+
+.logos-slide{
+    display: inline-block;
+    animation: 12s slide infinite linear;
+}
+
+.logos-slide img {
+    height: 180px;
+    padding:0 7px;
+    margin: 0 2rem;
+    width: 180px;
+}
+
+@keyframes slide {
+    from {
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+
+/* ABOUT ME */
+
+.about{
+    height: 70vh;
+    width: 50%;
+    margin: auto;
+    border-radius: 15% 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_content{
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_content h2 {
+    padding: 1rem;
+    margin:  0 15px;
+}
+
+.about_content p {
+    padding: 1rem 1rem;
+    margin: auto;
+    text-align: center;
+    background-color: #ff84001c;
+    border-radius: 12px;
+}
+
+.about_content a {
+    padding: 10px;
+    border-radius: 12px;
+    text-align: center;
+    background-color: #ff8200;
+    color: white;
+}
+
+.about img {
+    border-radius: 50%;
+    width: 250px;
+    margin:25px 0;
+}
+
+/* PROJECTS */
+
+.projects{
+    margin-top: 30px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: #129dde23;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 300px;
+    width: 300px;
+    box-shadow: 5px 5px 15px gray;
+    border-radius: 10px;
+    background-color: transparent;
+    transition: .5s;
+    margin: 15px auto;
+    background-color: rgb(255, 255, 255);
+}
+
+.card a {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    margin-top: auto;
+    background-color: #ff8200;
+    color: white;
+}
+
+
+.card:hover {
+    background-color: rgba(204, 139, 0, 0.075);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.card img {
+    width: 100%;
+    height: 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+/* header {
     position: sticky;
     top: 0px;
     left: 0px;
@@ -58,4 +321,4 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 10px 10px 0 0;
-}
+} */
