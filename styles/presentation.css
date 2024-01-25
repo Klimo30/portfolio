@@ -1,3 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Primary Colors #129dde  #ff8200 */
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+/* HEADER */
+.header{
+    width: 90%;
+    display: flex;
+    justify-content: space-around;
+    height:4rem;
+    align-items: center;
+    top: 0;
+    position: fixed;
+    z-index: 3;
+}
+
+
+.header, .nav {
+    display: flex;
+}
+
+.nav-links, li, a{
+    display:flex;
+    gap: 2rem;
+    list-style: none;
+    text-decoration: none;
+    
+}
+
 main {
     text-align: center;
 }
@@ -6,18 +47,85 @@ main {
     margin: 2em;
 }
 
-a {
+.header a{
     text-decoration: none;
-    background-color: rgb(44, 151, 32);
+    background-color: #ff8200;
     color: azure;
     font-weight: bolder;
     padding: .5em;
+    font-size: 1.2rem;
     border-radius: 5px;
     margin: 0 1em;
     transition: .5s;
 }
 
-a:hover {
+.header a:hover {
     opacity: .8;
     transition: .5s;
+    color: black;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* Project Head */
+
+.headline{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    background-color: aqua;
+    margin: 5em 0 2em 0;
+    gap: 3.5em;
+}
+
+.headline .btns{
+    display: flex;
+    gap: 1.2em;
+}
+
+.btns a {
+        text-decoration: none;
+        background-color: #000000;
+        color: rgb(255, 255, 255);
+        font-weight: bolder;
+        padding: 1em;
+        font-size: 1.2rem;
+        border-radius: 7px;
+        margin: 0 1em;
+        transition: .5s;
+}
+
+.btns a:hover {
+    opacity: .9;
+    transition: .5s;
+}
+
+/* ICONS */
+
+.icons{
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5em 0;
+}
+
+.icons img {
+    width: 200px;
+}
+
+.project img{
+    width: 100em;
+    height: 40em;
 }
