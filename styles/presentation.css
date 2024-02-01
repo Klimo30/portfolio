@@ -26,6 +26,20 @@ body{
     z-index: 3;
 }
 
+.logo img{
+    width: 3em;
+    border-radius: 50%;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1.5em;
+    cursor: pointer;
+}
+
 
 .header, .nav {
     display: flex;
