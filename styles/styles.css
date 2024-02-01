@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Source Code Pro", monospace;
 }
 
 /* Primary Colors #129dde  #ff8200 */
@@ -9,7 +10,6 @@
 body{
     width: 100%;
     height: 100vh;
-    font-family: "Source Code Pro", monospace;
     font-weight: 500;
     font-style: normal;
 }
@@ -450,7 +450,7 @@ body{
         }
 
         
-        
+
         
         
 
