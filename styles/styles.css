@@ -221,7 +221,7 @@ body{
 /* ABOUT ME */
 
 .about{
-    height: 90vh;
+    height: 40em;
     width: 100%;
     margin: auto;
     border-radius: 15px 15px;
@@ -230,15 +230,12 @@ body{
     justify-content: center;
     align-items: center;
     color: rgb(0, 0, 0);
-    /* background-color:#129dde; */
-    border-radius: 25px 0 25px 20 ;
     
 }
 
 .about_content{
     gap: 1rem;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     font-size: 1.2rem;
@@ -254,7 +251,8 @@ body{
     padding: 2rem 2rem;
     margin: auto 1.5rem;
     text-align: center;
-    border-radius: 75px 15px 75px 15px;
+    border-radius: 15px;
+    background-color: #129dde;
 }
 
 .about_content a {
@@ -262,13 +260,13 @@ body{
     border-radius: 12px;
     text-align: center;
     background-color: #ff8200;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .about img {
-    border-radius: 15px 15px;
-    width: 250px;
-    margin:1.2em 0;
+    border-radius: 10px;
+    width: 12em;
+    margin:1.2em auto;
 }
 
 /* PROJECTS */
@@ -438,11 +436,22 @@ body{
             border-radius: 12px;
         }
 
+        .about{
+            width: 100%;
+            height: 55em;
+        }
+        .about_content a {
+            padding: 1em;
+            border-radius: 12px;
+            text-align: center;
+            background-color: #ff8200;
+            color: rgb(255, 255, 255);
+        }
+        
         .about img {
-            border-radius: 25px 10px;
-            width: 150px;
-            height: 150px;
-            margin:2em 0;
+            border-radius: 10px;
+            width: 7em;
+            margin:auto;
         }
         .contact{
             width: 100%;
