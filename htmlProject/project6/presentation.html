@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects</title>
+    <link rel="stylesheet" href="/styles/presentation.css">
     <link rel="stylesheet" href="https://klimo30.github.io/portfolio/styles/presentation.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Source+Code+Pro:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/styles/presentation.css">
     <script src="https://kit.fontawesome.com/3e368e0e81.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -56,5 +56,16 @@
             <p>Klim</p>
         </div>
     </footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>
