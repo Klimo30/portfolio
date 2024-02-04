@@ -20,12 +20,18 @@
             </div>
             <div class="nav">
                 <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="index.html">Home</a></li>
+                <li class="hideOnMobile"><a href="#projects">Projects</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="menu-button" onclick=showSidebar()><i class="fa-solid  fa-bars fa-2xl"></i></li>
                 </ul>
-                <div class="burger"></div>
+                <ul class="sidebar">
+                    <li class="x-button" onclick=hideSidebar()><i class="fa-solid fa-x fa-l"></i></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#about">About</a></li>
+                    </ul>
             </div>
         </div>
         <div class="hero" id="bg">
@@ -137,5 +143,17 @@
           </div>
           <p id="copyright">© 2024 Klim Gorochovsky. All Rights Reserved.</p>
     </div>
+
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+    </script>
 </body>
 </html>

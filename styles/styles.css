@@ -45,12 +45,12 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    gap: 1.5em;
+    gap: 1em;
     cursor: pointer;
 }
 
 .logo p {
-    font-size: 1.2em;
+    font-size: 1rem;
     font-weight: 600;
 }
 
@@ -61,10 +61,41 @@ body{
 
 .nav-links, li, a{
     display:flex;
-    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2.5em;
     list-style: none;
     text-decoration: none;
+    text-transform: uppercase;
     
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 30vh;
+    width: 250px;
+    z-index: 999;
+    background-color: rgba(255, 255, 255, 0.144);
+    box-shadow: -10px 0 10px black(0,0,0,0.1);
+    backdrop-filter: blur(10px);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em;
+}
+
+.menu-button{
+    display: none;
+}
+
+.sidarbar li{
+    width: 100%;
+}
+
+.sidebar a{
+    width: 100%;
 }
 
 .nav a{
@@ -80,9 +111,9 @@ body{
 }
 
 .nav a:hover {
-    opacity: .8;
+    opacity: .9;
     transition: .5s;
-    color: rgb(255, 255, 255);
+    color: rgb(224, 136, 3);
 }
 
 /* HERO SECTION */
@@ -397,6 +428,35 @@ body{
 
 
     @media (max-width:600px){
+        .hideOnMobile{
+            display: none;
+        }
+
+        .sidebar{
+            width: 100%;
+        }
+
+        .menu-button{
+            display: block;
+            cursor: pointer;
+        }
+
+        .menu-button:hover{
+            color: #ff8200;
+            transition: 0.5s;
+        }
+
+        .x-button{
+            cursor: pointer;
+        }
+
+        .x-button:hover{
+            color: #ff8200;
+            transition: 0.5s;
+        }
+
+
+        
         .image_pic{
             display: none;
         }
