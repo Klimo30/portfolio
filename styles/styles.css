@@ -82,6 +82,7 @@ body{
     backdrop-filter: blur(10px);
     flex-direction: column;
     justify-content: center;
+    display: none;
     gap: 2em;
 }
 
